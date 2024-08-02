@@ -1,0 +1,23 @@
+<html>
+<head>
+    <body>
+
+        <h1 id="Header1">Webpage Dynamics L2: Javascript Variables</h1>
+        <p>Please use this From to input some numbers</p>
+        <form>
+            <input type="text" id="Number1" value="0" />
+            <input type="text" id="Number2" value="0" />
+            <input type="button" value="Display sum" onclick="SumMsgJS ()" />
+
+        </form>
+        <script>
+            function SumMsgJS(){
+                var a=parseInt(document.getElementById ("Number1").value);
+                var b=parseInt(document.getElementById ("Number2").value);
+                var sum1=a+b;
+                alert(sum1+ " is the sum of the numbers entered");
+            }
+        </script>
+    </body>    
+</head>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <h1 id="Header1">Webpage Dynamics L2: Javascript Arrays</h1>
+    <h3>...an introduction to arrays:</h3>
+    <p id="ArrayTarget1"></p>
+    <form>
+      <input
+        type="button"
+        value="click for myFuncntion1"
+        onclick="ArrayOut1()"
+      />
+      <input
+        type="button"
+        value="click for myFuncntion2"
+        onclick="ArrayOut2()"
+      />
+    </form>
+    <script>
+      var MyArray1 = new Array(117, 5, 78);
+      var MyArray2 = new Array();
+      MyArray2[0] = 17;
+      MyArray2[1] = 115;
+      MyArray2[2] = 30;
+
+      var MyVariable = document.getElementById("ArrayTarget1");
+      function ArrayOut1() {
+        document.getElementById("Header1").style.color = "red";
+        MyVariable.innerHTML =
+          "MyArray1[0] " +
+          MyArray1[0] +
+          "<BR>" +
+          "MyArray1[1]" +
+          MyArray1[1] +
+          "<BR>" +
+          "MyArray1[2]" +
+          MyArray1[2] +
+          "<BR>";
+      }
+      function ArrayOut2() {
+        document.getElementById("Header1").style.color = "blue";
+        MyVariable.innerHTML =
+          "MyArray2[0] " +
+          MyArray2[0] +
+          "<BR>" +
+          "MyArray2[1]" +
+          MyArray2[1] +
+          "<BR>" +
+          "MyArray2[2]" +
+          MyArray2[2] +
+          "<BR>";
+      }
+    </script>
+  </body>
+</html>

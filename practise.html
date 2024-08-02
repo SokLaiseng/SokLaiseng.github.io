@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        button{
+            background-color: teal;
+            width: 3rem;
+            height: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <p id="demo">Resul:</p>
+    <label for="num1">Num1:</label>
+    <input type="text" placeholder="Num1" id="num1"><br><br>
+    <label for="num2">Num2:</label>
+    <input type="text" placeholder="Num2" id="num2"><br><br>
+    <button type="button" onclick="sum()">+</button>
+    <button type="button" onclick="sub()">-</button>
+    <button type="button" onclick="mul()">*</button>
+    <button type="button" onclick="div()">/</button>
+
+    <script>
+        function sum(){
+            let n1 = Number(document.getElementById("num1").value);
+            let n2 = Number(document.getElementById("num2").value);
+            let sum = n1 + n2;
+            document.getElementById("demo").innerHTML = "Result: " + sum;
+        }
+        function sub(){
+            let n1 = Number(document.getElementById("num1").value);
+            let n2 = Number(document.getElementById("num2").value);
+            let sub = n1 - n2;
+            document.getElementById("demo").innerHTML = "Result: " + sub;
+        }
+        function mul(){
+            let n1 = Number(document.getElementById("num1").value);
+            let n2 = Number(document.getElementById("num2").value);
+            let mul = n1 * n2;
+            document.getElementById("demo").innerHTML = "Result: " + mul;
+        }
+        function div(){
+            let n1 = Number(document.getElementById("num1").value);
+            let n2 = Number(document.getElementById("num2").value);
+            let div = n1 / n2;
+            document.getElementById("demo").innerHTML = "Result: " + div;
+        }
+    </script>
+</body>
+</html>

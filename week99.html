@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture</title>
+</head>
+<body>
+    <img src="" name="img1" border="0" width="200" height="150">
+    <script>
+        var myImages = new Array("Imgs/12.jpg", "Imgs/2.png", "Imgs/11.jpg", "Imgs/3.png");
+        var imgIndex = prompt("Enter a number from 1 to 4", "");
+        document.images["img1"].src = myImages[imgIndex-1];
+    </script>
+</body>
+</html>

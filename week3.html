@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <title>kidss</title>
+</head>
+<body>
+    <h1 id=""Header1>Webpage Dynamics</h1>
+    <p id="test1">input</p>
+    <form>
+        <input type="text" id="n1" value="0">
+        <input type="text" id="n2" value="0">
+         <input type="button" value="Display Sum" onclick="a()"/>
+    </form>
+    <script>
+        function a(){
+            var N1=parseInt(document.getElementById("n1").value);
+            var N2= parseInt(document.getElementById("n2").value);
+            var testOut1=document.getElementById("test1");
+            if(N1>=0&& N1<=100){
+                testOut1.innerHTML= "Number 1 is between 0 and 100";
+            }else{
+                testOut1.innerHTML="Number 1 is Not between 0 and 100";
+            }
+            var sum1=N1+N2;
+            alert(sum1+ " is the sum of the numbers entered");
+        }
+    </script>
+   
+</body>
+</html>

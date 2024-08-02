@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date Converter</title>
+    <script>
+        function convertDate() {
+            const dateInput = document.getElementById('dateInput').value;
+            const [day, month, year] = dateInput.split('-');
+            const monthNames = [
+                "January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"
+            ];
+            const monthName = monthNames[parseInt(month,10) - 1];
+            const result = `${day} / ${monthName} / ${year}`;
+            document.getElementById('result').textContent = 'Result: ' + result;
+        }
+    </script>
+</head>
+<body>
+    <label for="dateInput">Enter Full Date:</label>
+    <br>
+    <input type="text" id="dateInput" placeholder="Full Date (DD-MM-YYYY)">
+    <br>
+    <button onclick="convertDate()">Show</button>
+    <p id="result"></p>
+</body>
+</html>

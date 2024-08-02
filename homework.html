@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homework</title>
+</head>
+<body>
+    <a id="element1"></a>
+    <a id="element2"></a>
+    <a id="element3"></a>
+    <button onclick="changeColors()">Change Colors</button>
+
+    <script>
+       
+        const colors = ["red", "green","yellow"];
+
+        function changeColors() {
+
+            document.getElementById("element1").style.color ="red";
+            document.getElementById("element2").style.color ="yellow";
+            document.getElementById("element3").style.color = "green";
+            document.body.style.backgroundColor = "red";
+        }
+    </script>
+</body>
+</html>

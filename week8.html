@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week8</title>
+</head>
+<body>
+    <button onclick="myFunction()">Try it</button>
+    <p id="hi">Please Visit Microsoft</p>
+    <h2>JavaScript Arrays</h2>
+
+    <p>Arrays use numbers to access its elements.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        // const person = ["John", "Doe", 46];
+        // document.getElementById("demo").innerHTML = person[0];
+
+        // const fruits = 
+        // ["Banana", "Orange", "Apple", "Mango"];
+
+        // let size = fruits.length;
+        // for (var i = size -1; i > 0; i--){
+        //     document.write((i + 1) + ". " + fruits[i] + "<br>");
+        // }
+        // let z = fruits.join(" * ");
+        // alert(z);
+        // var colors = new Array("red", "blue", "green", "blue");
+
+        // alert(colors.indexOf("red"));
+        // alert(colors.lastIndexOf("blue"));
+
+        // alert("RED: " + colors[0].length);
+        // alert("BLUE: " + colors[1].length);
+
+        // var myNumber = -101;
+        // document.write(Math.abs(myNumber));
+
+        // var max = Math.max(21, 22); // result is 22
+        // var min = Math.min(30.1, 30.2); // result is 30.1
+
+        // alert(max);
+        // alert(min);
+
+        // var myNumber = 101.01;
+        // document.write(Math.ceil(myNumber) + "<br/>"); // ceil is always round up when see point/dot
+        // document.write(parseInt(myNumber)); // parseInt is always convert to integer when see point/dot
+
+        // var myNumber = 44.5;
+        // document.write(Math.round(myNumber) + "<br/>");
+        // myNumber = 44.49;
+        // document.write(Math.round(myNumber));
+
+        // var myNumber = 44.9;
+        // document.write(Math.floor(myNumber) + "<br/>");
+        // myNumber = 44.49;
+        // document.write(Math.floor(myNumber));
+
+        var throwCount;
+        var diceThrow,dice_Throw;
+        for (throwCount = 0; throwCount < 10; throwCount++){
+            diceThrow = (Math.floor(Math.random() * 6) + 1);
+            dice_Throw = (Math.ceil(Math.random() * 6));
+            document.write("Random-Floor: " + diceThrow + "<br>");
+            document.write("Random-Ceil: " + dice_Throw + "<br>");
+        }
+        
+
+    </script>
+    
+</body>
+<script src="week8.js"></script>
+</html>
